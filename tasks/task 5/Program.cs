@@ -6,7 +6,8 @@ if (x > 0)
 {
     for (int i=-x; i < x + 1; i++)
     {
-    Console.Write($"{i},");
+    // Console.Write($"{i},");
+    Console.Write(i+" ");
     }
 Console.WriteLine();
 }
