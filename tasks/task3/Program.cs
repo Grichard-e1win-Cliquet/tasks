@@ -9,3 +9,5 @@ if (x == 4) Console.WriteLine("Today is Thursday");
 if (x == 5) Console.WriteLine("Today is Friday");
 if (x == 6) Console.WriteLine("Today is Saturday");
 if (x == 7) Console.WriteLine("Today is Sunday");
+if (x < 1) Console.WriteLine("Only seven days in the week, Idiot");
+if (x > 7) Console.WriteLine("Only seven days in the week, Idiot");
