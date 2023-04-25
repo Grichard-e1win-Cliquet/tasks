@@ -51,3 +51,5 @@ else
     Console.Write(". These are both max.");
 }
 Console.WriteLine();
+
+// можно просто ввести две переменные а и б, где мы будем первое делить на 10, а второе %10
