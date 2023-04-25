@@ -45,3 +45,9 @@ PrintArray(number);
 Console.Write($". The first and the second digits are {number[0]} and {number[2]}.");
 Console.WriteLine($" So new number is {number[0]}{number[2]}.");
 Console.WriteLine();
+
+// int x1 = x/100;
+// int x2 = x%100/10;
+// int x3 = x%100%10;
+
+// Console.WriteLine($"{x1}{x3}");
