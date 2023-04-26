@@ -48,6 +48,7 @@ Console.WriteLine();
 
 // int x1 = x/100;
 // int x2 = x%100/10;
-// int x3 = x%100%10;
+// int x3 = x%10;
 
 // Console.WriteLine($"{x1}{x3}");
+// Console.WriteLine($"{x1*10+x3}");
