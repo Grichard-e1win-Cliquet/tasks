@@ -12,6 +12,8 @@ Console.WriteLine("Enter a three digits number:");
 //     Console.WriteLine("I SAID THREE DIGITS NUMBER, PUNK!");
 // }
 
+// int x = Math.Abs(Convert.ToInt32(Console.ReadLine()));
+
 int x = Convert.ToInt32(Console.ReadLine());
 string y = Convert.ToString(x);
 if (Math.Abs(x) > 99 & Math.Abs(x) < 1000 )
