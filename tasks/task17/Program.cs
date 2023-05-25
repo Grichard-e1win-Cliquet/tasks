@@ -16,7 +16,6 @@ else
     if (x<0 & y<0) Console.WriteLine("The point XY belong to the third quarter.");
     if (x>0 & y<0) Console.WriteLine("The point XY belong to the fourth quarter.");
 }
-
 // if (a > max) max = a;
 // if (b > max) max = b;
 // if (c > max) max = c;
