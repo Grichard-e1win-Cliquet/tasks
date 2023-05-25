@@ -1,6 +1,6 @@
-﻿// Console.Clear();
+﻿Console.Clear();
 
-// Console.WriteLine("Enter number of quarter. ");
+Console.WriteLine("Enter number of quarter. ");
 
 // int quarter = Convert.ToInt32(Console.ReadLine());
 // Console.Clear();
@@ -13,26 +13,33 @@
 // if (quarter==4) Console.WriteLine("The local diaposone of points XY is [x>0 & y<0]");
 // }
 // else Console.WriteLine("The quarter belongs from 1 to 4!");
-Console.Clear();
-Console.WriteLine("Enter number of quarter. ");
+// Console.Clear();
+// Console.WriteLine("Enter number of quarter. ");
 
-int x = Convert.ToInt32(Console.ReadLine());
+// int x = Convert.ToInt32(Console.ReadLine());
 
-switch(x)
-{
-    case 1:
-        Console.WriteLine("The local diaposone of points XY is [x>0 & y>0]");
-        break;
-    case 2:
-        Console.WriteLine("The local diaposone of points XY is [x<0 & y>0]");
-        break;
-    case 3:
-        Console.WriteLine("The local diaposone of points XY is [x<0 & y<0]");
-        break;
-    case 4:
-        Console.WriteLine("The local diaposone of points XY is [x>0 & y<0]");
-        break;
-    default:
-        Console.WriteLine("The quarter belongs from 1 to 4!");
-        break;
-}
+// switch(x)
+// {
+//     case 1:
+//         Console.WriteLine("The local diaposone of points XY is [x>0 & y>0]");
+//         break;
+//     case 2:
+//         Console.WriteLine("The local diaposone of points XY is [x<0 & y>0]");
+//         break;
+//     case 3:
+//         Console.WriteLine("The local diaposone of points XY is [x<0 & y<0]");
+//         break;
+//     case 4:
+//         Console.WriteLine("The local diaposone of points XY is [x>0 & y<0]");
+//         break;
+//     default:
+//         Console.WriteLine("The quarter belongs from 1 to 4!");
+//         break;
+// }
+
+string [] quarters = {"The quarter belongs from 1 to 4!", "x>0 & y>0", "x<0 & y>0", "x<0 & y<0", "x>0 & y<0"};
+
+int Q = Convert.ToInt32(Console.ReadLine());
+
+if(Q>0 & Q<5) Console.WriteLine(quarters[Q]);
+else Console.WriteLine(quarters[0]);
