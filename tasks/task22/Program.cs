@@ -2,7 +2,7 @@
 
 Console.WriteLine("Enter a number. ");
 
-int N = Convert.ToInt32(Console.ReadLine());
+int N = Math.Abs(Convert.ToInt32(Console.ReadLine()));
 Console.Clear();
 
 for (int i = 1; i <= N; i++)
