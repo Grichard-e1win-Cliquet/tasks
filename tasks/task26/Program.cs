@@ -17,7 +17,7 @@ int Dig(int number)
     else
     {
         while (number > 0)
-    {   number = number/10;
+    {   number/=10;
         i++;
     }
     }
