@@ -11,13 +11,13 @@ Console.WriteLine("Enter a number:");
 
 string? A = Convert.ToString(Console.ReadLine());
 int length = A.Length;
-int result = 0;
+int result = A[0];
 
-for(int i = 0; i<length; i++)
+
+for(int i = 1; i<length; i++)
 {
     result = result + A[i];
 }
 
 Console.Write($"Sum of the digits in {A} equals {result}.");
-Console.Write($"{A[0]}, {A[1]}, {A[2]} {length}");
 Console.WriteLine();
