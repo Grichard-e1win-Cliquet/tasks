@@ -8,16 +8,23 @@
 
 Console.Clear();
 Console.WriteLine("Enter a number:");
+ 
+int A = Convert.ToInt32(Console.ReadLine());
+// string? A = Convert.ToString(Console.ReadLine());
+// int length = A.Length;
+int result = 0;
 
-string? A = Convert.ToString(Console.ReadLine());
-int length = A.Length;
-int result = A[0];
+// for(int i = 0; i<length; i++)
+// {
+//     result = result + A[i];
+// }
 
-
-for(int i = 1; i<length; i++)
+while (A > 0)
 {
-    result = result + A[i];
+    int num = A % 10;
+    A /= 10;
+    result = result + num;
 }
 
-Console.Write($"Sum of the digits in {A} equals {result}.");
+Console.Write($"Sum of the digits in number equals {result}.");
 Console.WriteLine();
