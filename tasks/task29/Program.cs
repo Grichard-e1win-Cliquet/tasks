@@ -17,7 +17,7 @@ Console.Clear();
 //     int i = 0;
 //     while(i < length)
 //     {
-//         array[i] = new Random().Next(-9999,10000);
+        // array[i] = new Random().Next(-9999,10000);
 //         i++;
 //     }
 // }

@@ -6,7 +6,7 @@ Console.WriteLine("Enter A:");
 int A = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Enter B:");
 int B = Convert.ToInt32(Console.ReadLine());
-
+Console.Clear();
 double C = P(A, B);
 
 double P(int x, int y)
