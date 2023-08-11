@@ -33,3 +33,25 @@ void Find (int[] arr, int finder)
 }
 
 Find(array, 4);
+
+// Console.Write("Enter a finding number: ");
+// int isk = int.Parse(Console.ReadLine());
+// bool iskomoe = false;
+
+// for(int i = 0; i < array.Length; i++)
+//     {
+//         if (array[i] == isk)
+//         {
+//              iskomoe = true;
+//              break;
+//         }
+//     }
+
+// if(iskomoe)
+// {
+//     Console.WriteLine($"The massive has {isk}.");
+// }
+// else
+// {
+//     Console.WriteLine($"The massive has not {isk}.");
+// }

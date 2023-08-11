@@ -22,10 +22,7 @@ void Changepolar (int [] arr)
 {
     for(int i = 0; i < arr.Length; i++)
     {
-        if(array[i] != 0)
-        {
             array[i]*= -1;
-        }
     }
     Console.WriteLine("Revert massive is: "+ '[' + string.Join(", ", arr) + ']');
 }
