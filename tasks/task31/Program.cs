@@ -12,6 +12,19 @@ void FillArr(int [] array)
     }
 }
 
+// Вариант решения вывода массива через инт
+// int [] FillArr(int size)
+// {
+//     int[] arr = new int[size];
+//     for(int i = 0; i < arr.Length; i++)
+//     {
+//         arr[i] = new Random().Next(-9,10);
+//     }
+//     return arr;
+// }
+// int num = Convert.ToInt32(Console.ReadLine());
+// int[] array = FillArr(num);
+
 void SUM (int [] array)
 {
     int SUMPOS = 0;
