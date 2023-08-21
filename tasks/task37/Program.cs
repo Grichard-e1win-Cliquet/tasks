@@ -19,6 +19,7 @@ Console.WriteLine("Massive is: " + '[' + string.Join (",", array)+ ']' + ".");
 
 int[] Multiarr (int[] arr)
 {
+    // int newLength = arr.Length%2 + arr.Length/2;
     if(arr.Length%2==0 && arr.Length > 2)
     {
         int [] Multi = new int[arr.Length/2];
@@ -39,11 +40,13 @@ int[] Multiarr (int[] arr)
     {
         int [] Multi = new int[((arr.Length-1)/2)+1];
         int j = arr.Length-1;
-        for(int i=0; i<(((arr.Length-1)/2));i++)
+        for(int i=0; i<(((arr.Length-1)/2));i++) 
+        // можно просто arr.Length/2
         {
             Multi[i] = arr[i]*arr[j-i];
         }
         Multi[(arr.Length-1)/2] = arr[(arr.Length-1)/2];
+        // можно просто arr.Length/2
         return Multi;
     }
 }
