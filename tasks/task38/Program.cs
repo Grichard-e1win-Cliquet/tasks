@@ -65,7 +65,7 @@ double [] array (int size)
 
     for(int i=0; i<array.Length;i++)
     {
-        array[i] = new Random().Next(10,1000) + new Random().NextDouble();
+        array[i] = Math.Round(new Random().Next(10,1000) + new Random().NextDouble(), 2);
     }
     return array;
 }
