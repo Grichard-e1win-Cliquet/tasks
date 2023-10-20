@@ -26,6 +26,7 @@ int [] ReverseMassive(int [] arr)
     for (int i = 0; i < arr.Length/2; i++)
     {
         int temp = arr[i];
+        // arr[i] = arr[arr.Length - i - 1];
         arr[i] = arr[j];
         arr[j] = temp;
         j--;
