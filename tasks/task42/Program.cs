@@ -1,9 +1,7 @@
 ﻿Console.Clear();
 
-Console.WriteLine("Enter a number: ");
+Console.Write("Enter a number: ");
 int num = int.Parse(Console.ReadLine());
-
-d(num);
 
 int d(int n)
 {
@@ -15,3 +13,17 @@ for (int i = num; i > 0; i/=2)
 {
     Console.WriteLine($"d({i}) = {d(i)}");
 }
+
+void BinaryView(int number)
+{
+    if(number == 0)
+    {
+        Console.Write($"Binary number from {num} equals ");
+        return;
+    }
+    BinaryView(number/2);
+    Console.Write(number%2);
+}
+
+BinaryView(num);
+Console.WriteLine();
