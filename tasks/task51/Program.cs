@@ -46,7 +46,7 @@ int sumdiag(int [,] somemassive)
         {
             if( i == j)
             {
-                sum = newarray[i, j] + sum;
+                sum += newarray[i, j];
             }
         }
     }

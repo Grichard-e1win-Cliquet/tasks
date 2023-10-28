@@ -45,7 +45,7 @@ int [,] doubled(int [,] somemassive)
         {
             if( i%2 == 0 && j%2==0)
             {
-                newarray[i, j] = newarray[i, j] * newarray[i, j];
+                newarray[i, j] *= newarray[i, j];
             }
         }
     }
