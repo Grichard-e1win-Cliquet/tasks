@@ -44,15 +44,14 @@ Console.WriteLine();
 
 void Swap(int [,] mass)
 {   
-    for(int i = 0; i < 1; i++)
+    int i = 0;
+    int temp = 0;
+    
+    for(int j = 0; j < mass.GetLength(1); j++)
     {
-        int temp = 0;
-        for(int j = 0; j < mass.GetLength(1); j++)
-        {
-            temp = mass[i, j];
-            mass [i, j] = mass [mass.GetLength(0)-1, j];
-            mass [mass.GetLength(0)-1, j] = temp;
-        }
+        temp = mass[i, j];
+        mass [i, j] = mass [mass.GetLength(0)-1, j];
+        mass [mass.GetLength(0)-1, j] = temp;
     }
     PrintArray(mass);
 }
