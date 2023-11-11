@@ -42,19 +42,19 @@ void PrintArray(int [,] arr)
 PrintArray(massive);
 Console.WriteLine();
 
-void Swap(int [,] mass)
+int [,] Change(int [,] mass)
 {   
-    for(int i = 0; i < 1; i++)
+    int [,] newMass = new int [mass.GetLength(1), mass.GetLength(0)];
+
+    for(int i = 0; i < mass.GetLength(0); i++)
     {
-        int temp = 0;
         for(int j = 0; j < mass.GetLength(1); j++)
         {
-            temp = mass[i, j];
-            mass [i, j] = mass [mass.GetLength(0)-1, j];
-            mass [mass.GetLength(0)-1, j] = temp;
+            newMass [j, i] = mass [i, j];
         }
     }
-    PrintArray(mass);
+    return newMass;
 }
 
-Swap(massive);
+int [,] changed = Change(massive);
+PrintArray(changed);
