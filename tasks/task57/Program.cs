@@ -46,8 +46,6 @@ int [] count(int [,] mass)
 {   
     int [] counted = new int [10];
 
-    // counted [0, 0] = ($"Convert.ToString(mass[0, 0]) meeting {count} times.");
-
     for(int t = 0; t < 10; t++)
     {
     int count = 0;
