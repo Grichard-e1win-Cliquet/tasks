@@ -42,13 +42,13 @@ void PrintArray(int [,] arr)
 PrintArray(massive);
 Console.WriteLine("____________________________________________");
 Console.WriteLine();
-int [,] count(int [,] mass)
+int [] count(int [,] mass)
 {   
-    int [,] counted = new int [10, 1];
+    int [] counted = new int [10];
 
     // counted [0, 0] = ($"Convert.ToString(mass[0, 0]) meeting {count} times.");
 
-    for(int t = 0; t < 9; t++)
+    for(int t = 0; t < 10; t++)
     {
     int count = 0;
     for(int i = 0; i < mass.GetLength(0); i++)
@@ -63,25 +63,22 @@ int [,] count(int [,] mass)
     }
     if(count > 0)
     {
-    counted[t, 0] = count;
+    counted[t] = count;
     }
     }
     return counted;
 }
 
-int [,] Counts = count(massive);
+int [] Counts = count(massive);
 Print(Counts);
 
-void Print(int [,] arr)
+void Print(int [] arr)
 {
-    for(int i = 0; i < arr.GetLength(0); i++)
+    for(int i = 0; i < arr.Length; i++)
     {
-        for(int j = 0; j < arr.GetLength(1); j++)
-        {
-            if(arr[i,j] > 0)
+            if(arr[i] > 0)
             {
-                Console.WriteLine("| The " + $"\"{i}\" " + "meetings " + $"{arr [i, j]} times. |");
+                Console.WriteLine("| The " + $"\"{i}\" " + "meetings " + $"{arr [i]} times. |");
             }
-        }
     }
 }
