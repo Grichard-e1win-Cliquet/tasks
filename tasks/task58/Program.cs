@@ -84,3 +84,5 @@ int [,] Multi(int [,] A, int [,] B)
 
 int [,] C = Multi(A,B);
 PrintArray(C);
+Console.WriteLine("________________________________");
+Console.WriteLine();
