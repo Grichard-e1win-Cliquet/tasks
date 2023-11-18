@@ -37,7 +37,7 @@ int [,,] enterArr()
         } 
     }
     PrintArr(check);
-
+    Console.WriteLine("------------------------------------");
     int x = 0;
     for(int k = 0; k < array.GetLength(2); k++)
     {
